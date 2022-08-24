@@ -1,0 +1,94 @@
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &:not(:nth-child(3n)) {
+            margin-right: 30px;
+    }
+}
+
+.project-card__wrapper {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+.project-image {
+    min-height: 294px;
+    width: 370px;
+}
+
+.project-card__overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image__overlay {
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--main-light-color);
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+
+    .project-card:hover & {
+            transform: translateY(0%);
+    }
+}
+
+.project-card {
+    background-color: var(--main-light-color);
+}
+
+.project-card__wrapper {
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
+.project-card__shadow {
+    transition: box-shadow var(--transition-duration) var(--transition-function);
+
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+.project-card__name {
+    margin-bottom: 4px;
+    
+    font-weight: 700;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--heading-text-color);
+}
+
+.project-card__description {
+    font-weight: 400;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--description-text-color);
+}

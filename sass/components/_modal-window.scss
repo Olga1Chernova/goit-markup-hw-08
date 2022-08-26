@@ -1,12 +1,15 @@
+@media screen and(max-width:480px) {
 .modal-window {
-    position: absolute;
-    width: 528px;
-    min-height: 581px;
-    background-color: var(--main-light-color);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px;
+        position: absolute;
+        max-width: 450px;
+        width: calc(100% - 30px);
+        min-height: 609px;
+        background-color: var(--main-light-color);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+    }
 }
 
 .modal-window__exit-button {
@@ -39,3 +42,30 @@
 .modal-window__exit-icon {
     fill: currentColor;
 }
+
+@media screen and(min-width:768px){
+.modal-window {
+        position: absolute;
+        width: calc(100% - 30px);
+        max-width: 450px;
+        min-height: 609px;
+        background-color: var(--main-light-color);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+    }
+}
+/*.modal-window {
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--main-light-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+
+*/

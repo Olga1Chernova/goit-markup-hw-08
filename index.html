@@ -24,13 +24,13 @@
                 <li class="menu__item"><a class="menu__item-link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
-        <button class="mobile-menu-open" type="button">
+        <button class="mobile-menu-open" type="button" data-menu-open>
             <svg class="mobile-menu-open__icon" width="40" height="40">
                 <use href="./images/sprite.svg#icon-menu_40px"></use>
             </svg>
         </button>
             <ul class="contact-header-info list">
-                <li class="contact-header-info__item"><a class="contact-header-info__item" href="mailto:info@example.com">info@example.com
+                <li class="mobile-menu-info__item"><a class="mobile-menu-info__item mobile-menu-info__mail" href="mailto:info@devstudio.com">info@devstudio.com
                     <div class="contact-header-info__container">
                     <svg class="contact-icon" width="16px" height="12px">
                         <use href="./images/sprite.svg#icon-envelope-hover"></use>
@@ -38,7 +38,7 @@
                     </div>
                 </a>
             </li>
-            <li class="contact-header-info__item"><a class="contact-header-info__item" href="tel:+380991111111">+38 099 111 11 11
+            <li class="mobile-menu-info__item"><a class="mobile-menu-info__item mobile-menu-info__tel" href="tel:+380991111111">+38 099 111 11 11
                 <div class="contact-header-info__container">
                     <svg class="contact-icon" width="10px" height="16px">
                         <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -48,28 +48,39 @@
             </li>
             </ul>
     </div>
-    <div class="mobile-menu">
-        <button class="mobile-menu__close-btn">
-            <svg class="mobile-menu__close-icon" width="40" height="40">
-                <use href="./images/sprite.svg#icon-close_40px"></use>
-            </svg>
-        </button>
-        <ul>
-            <li><a href="">Студія</a></li>
-            <li><a href="">Портфоліо</a></li>
-            <li><a href="">Контакти</a></li>
-        </ul>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+                <li class="mobile-menu-list__item"><a href="./index.html" class="mobile-menu-list__link mobile-menu-list__link--current">Студія</a></li>
+                <li class="mobile-menu-list__item"><a href="./portfolio.html" class="mobile-menu-list__link">Портфоліо</a></li>
+                <li class="mobile-menu-list__item"><a href="" class="mobile-menu-list__link">Контакти</a></li>
+            </ul>
+            <ul class="mobile-menu-info list">
+                <li><a class="mobile-menu-info__item mobile-menu-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li><a class="mobile-menu-info__item mobile-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mob-menu-social-list list">
+                <li class="mob-menu-social-list__item"><a href="" class="mob-menu-social-list__link">Instagram</a></li>
+                <li class="mob-menu-social-list__item"><a href="" class="mob-menu-social-list__link">Twitter</a></li>
+                <li class="mob-menu-social-list__item"><a href="" class="mob-menu-social-list__link">Facebook</a></li>
+                <li class="mob-menu-social-list__item"><a href="" class="mob-menu-social-list__link">LinkedIn</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 <main>
-    <!--
-        <section class="hero hero-overlay">
+    <section class="hero hero-overlay">
         <div class="container hero__container"></div>
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button class="modal-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
-        </section>
-        -->
+    </section>
+
 <!--Плюсы компании-->
 <!--
 <section class="advantage">
@@ -488,5 +499,6 @@
 </div>
 <script src="./js/modal.js"></script>
 -->
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@
 <header class="page-header">
     <div class="container page-header__container">
         <nav class="page-nav">
-            <a href="" lang="en" class="logotype-header logotype"><span class="logotype__part">Web</span>Studio</a>
+            <a href="" lang="en" class="logotype-header logotype-header-style"><span class="logotype__part">Web</span>Studio</a>
         <!--Ссылки-->
             <ul class="menu list">
                 <li class="menu__item"><a class="menu__item-link current" href="./index.html">Студія</a></li>
@@ -139,19 +139,31 @@
     <ul class="work-images list">
         <li class="image-example">
             <div class="work-image-overlay">
-                <img src="./images/photo1.jpg" alt="написання програми" width="370">
+                <img 
+                srcset="./images/desktop-app-370@2x.jpg 2x"
+                src="./images/desktop-app-370.jpg" 
+                alt="написання програми" 
+                width="370">
                 <p class="work-image-description">Десктопні додатки</p>
             </div>
         </li>
         <li class="image-example">
             <div class="work-image-overlay">
-                <img src="./images/photo2.jpg" alt="дистанційне управління" width="370">
+                <img
+                srcset="./images/mobile-app-370@2x.jpg 2x"
+                src="./images/mobile-app-370.jpg" 
+                alt="дистанційне управління" 
+                width="370">
                 <p class="work-image-description">Мобільні додатки</p>
             </div>
         </li>
         <li class="image-example"> 
             <div class="work-image-overlay">
-                <img src="./images/photo3.jpg" alt="підбір дизайну" width="370">
+                <img
+                srcset="./images/design-solutions-370@2x.jpg 2x"
+                src="./images/design-solutions-370.jpg" 
+                alt="підбір дизайну" 
+                width="370">
                 <p class="work-image-description">Дизайнерські рішення</p>
             </div>
         </li>
@@ -160,13 +172,36 @@
 </section>
 
 <!--Команда-->
-<!--
+
 <section class="team">
     <div class="team__container container">
     <h2 class="team__title">Наша команда</h2>
     <ul class="team-img-list list">
         <li class="team-card">
-            <img class="team-card__member-img" src="./images/img1.jpg" alt="працівник 1" width="270">
+            <picture>
+                <source 
+                srcset="./images/igor-270.webp 1x, ./images/igor-270@2x.webp 2x" 
+                media="(min-width:1200px)" 
+                type="image/webp"/>
+                <source  
+                srcset="./images/igor-270.jpg 1x, ./images/igor-270@2x.jpg 2x" 
+                media="(min-width:1200px)"/>
+                <source 
+                srcset="./images/igor-354.webp 1x, ./images/igor-354@2x.webp 2x" 
+                media="(min-width:768px)" 
+                type="image/webp"/>
+                <source  
+                srcset="./images/igor-354.jpg 1x, ./images/igor-354@2x.jpg 2x" 
+                media="(min-width:768px)" />
+                <source 
+                srcset="./images/igor-450.webp 1x, ./images/igor-450@2x.webp 2x" 
+                media="(min-width:320px)" 
+                type="image/webp"/>
+                <source  
+                srcset="./images/igor-450.jpg 1x, ./images/igor-450@2x.jpg 2x" 
+                media="(min-width:320px)" />
+                <img class="team-card__member-img" src="./images/igor-450.jpg" alt="працівник 1">
+            </picture>
                 <div class="team-card__wrapper">
                 <h3 class="team-card__member">Ігор Дем'яненко</h3>
                 <p class="team-card__job">Product Designer</p>
@@ -203,7 +238,30 @@
                 </div>
         </li>
         <li class="team-card">
-            <img class="team-card__member-img" src="./images/img2.jpg" alt="працівник 2" width="270">
+            <picture>
+                <source 
+                srcset="./images/olga-270.webp 1x, ./images/olga-270@2x.webp 2x" 
+                media="(min-width:1200px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/olga-270.jpg 1x, ./images/olga-270@2x.jpg 2x" 
+                media="(min-width:1200px)" />
+                <source 
+                srcset="./images/olga-354.webp 1x, ./images/olga-354@2x.webp 2x" 
+                media="(min-width:768px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/olga-354.jpg 1x, ./images/olga-354@2x.jpg 2x" 
+                media="(min-width:768px)" />
+                <source 
+                srcset="./images/olga-450.webp 1x, ./images/olga-450@2x.webp 2x" 
+                media="(min-width:320px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/olga-450.jpg 1x, ./images/olga-450@2x.jpg 2x" 
+                media="(min-width:320px)" />
+                <img class="team-card__member-img" src="./images/olga-450.jpg" alt="працівник 2">
+            </picture>
             <div class="team-card__wrapper">
             <h3 class="team-card__member">Ольга Репіна</h3>
             <p class="team-card__job">Frontend Developer</p>
@@ -240,7 +298,30 @@
             </div>
         </li>
         <li class="team-card">
-            <img class="team-card__member-img" src="./images/img3.jpg" alt="працівник 3" width="270">
+            <picture>
+                <source 
+                srcset="./images/nikolay-270.webp 1x, ./images/nikolay-270@2x.webp 2x" 
+                media="(min-width:1200px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/nikolay-270.jpg 1x, ./images/nikolay-270@2x.jpg 2x" 
+                media="(min-width:1200px)" />
+                <source 
+                srcset="./images/nikolay-354.webp 1x, ./images/nikolay-354@2x.webp 2x" 
+                media="(min-width:768px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/nikolay-354.jpg 1x, ./images/nikolay-354@2x.jpg 2x" 
+                media="(min-width:768px)" />
+                <source 
+                srcset="./images/nikolay-450.webp 1x, ./images/nikolay-450@2x.webp 2x" 
+                media="(min-width:320px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/nikolay-450.jpg 1x, ./images/nikolay-450@2x.jpg 2x" 
+                media="(min-width:320px)" />
+                <img class="team-card__member-img" src="./images/mykhail-450.jpg" alt="працівник 4">
+            </picture>
             <div class="team-card__wrapper">
             <h3 class="team-card__member">Микола Тарасов</h3>
             <p class="team-card__job">Marketing</p>
@@ -277,7 +358,30 @@
             </div>
         </li>
         <li class="team-card">
-            <img class="team-card__member-img" src="./images/img4.jpg" alt="працівник 4" width="270">
+            <picture>
+                <source 
+                srcset="./images/mykhail-270.webp 1x, ./images/mykhail-270@2x.webp 2x" 
+                media="(min-width:1200px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/mykhail-270.jpg 1x, ./images/mykhail-270@2x.jpg 2x" 
+                media="(min-width:1200px)" />
+                <source 
+                srcset="./images/mykhail-354.jpg 1x, ./images/mykhail-354@2x.jpg 2x" 
+                media="(min-width:768px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/mykhail-354.jpg 1x, ./images/mykhail-354@2x.jpg 2x" 
+                media="(min-width:768px)" />
+                <source 
+                srcset="./images/mykhail-450.webp 1x, ./images/mykhail-450@2x.webp 2x" 
+                media="(min-width:320px)" 
+                type="image/webp"/>
+                <source 
+                srcset="./images/mykhail-450.jpg 1x, ./images/mykhail-450@2x.jpg 2x" 
+                media="(min-width:320px)" />
+                <img class="team-card__member-img" src="./images/mykhail-450.jpg" alt="працівник 4">
+            </picture>
             <div class="team-card__wrapper">
             <h3 class="team-card__member">Михайло Єрмаков</h3>
             <p class="team-card__job">UI Designer</p>
@@ -316,13 +420,12 @@
     </ul>
     </div>
 </section>
--->
+
 <!--Клієнти-->
 
-<!--
-    <section class="clients">
+<section class="clients">
     <div class="container">
-    <h2 class="team__title">Постійні клієнти</h2>
+    <h2 class="clients__title">Постійні клієнти</h2>
     <ul class="clients-list list">
         <li class="client-list__item">
         <a href="#" class="client-list__link">
@@ -370,24 +473,24 @@
     </div>
 </section>
 </main>
--->
-<!--Подвал-->
-<!--
+
+<!--Підвал-->
+
 <footer class="page-footer">
     <div class="container page-footer__container">
         <div class="page-footer__adress-wrapper">
-            <a href="" lang="en" class="logotype"><span class="logotype__part">Web</span><span class="logotype__part-footer">Studio</span></a>
+            <a href="" lang="en" class="logotype-footer-style"><span class="logotype__part">Web</span><span class="logotype__part-footer">Studio</span></a>
             <address>
                 <p class="studio-adress">м. Київ, пр-т Лесі Українки, 26</p>
                 <ul class="contact-list list">
                     <li class="contact-list__item"><a class="contact-list__item"
-                            href="mailto:info@example.com">info@example.com</a></li>
+                            href="mailto:info@example.com">info@devstudio.com</a></li>
                     <li class="contact-list__item"><a class="contact-list__item" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </address>
         </div>
-        <div class="page-footer__page-footer__join-wrapper">
+        <div class="page-footer__join-wrapper">
         <p class="page-footer__join">Приєднуйтесь</p>
         <div class="page-footer__social-links">
             <ul class="join-social-list list">
@@ -436,8 +539,8 @@
         </form>
     </div>
 </footer>
--->
-<!---->
+
+<!--Modal window-->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
         <button type="button" class="modal-window__exit-button" data-modal-close>

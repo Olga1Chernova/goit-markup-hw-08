@@ -1,65 +1,53 @@
-.page-footer__page-footer__join-wrapper {
-    margin-right: 93px;
-}
+@media screen and (max-width:767px){
+    .logotype-footer-style{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+    .studio-adress{
+        text-align: center;
+    }
+    .contact-list__item{
+        text-align: center;
+    }
 
-.page-footer__join {
-    margin-bottom: 20px;
+    .page-footer__join-wrapper{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-light-color);
-}
-
-.page-footer__container {
-    display: flex;
-    align-items: baseline;
-}
-
-.page-footer__adress-wrapper {
-    margin-right: 70px;
-}
-
-.join-social-list {
-    display: flex;
-    justify-content: center;
-}
-
-.join-social-list__item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.join-social-list__link {
-    transition: background-color var(--transition-duration) var(--transition-function);
-
-    color: var(--main-light-color);
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    display: flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-
-    &:hover,
-    &:focus {
-            background-color: var(--accent-color);
+    .page-footer__join{
+        text-align: center;
+    }
+    .subscribe-form__title{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .subscribe-button{
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }
 
-.join-social-list__icon {
-    fill: currentColor;
-    width: 20px;
-    height: 20px;
-}
+
 
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
+.logotype-footer-style{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logotype__part-footer {
+    color: var(--main-light-color);
 }
 
 .studio-adress {
@@ -85,36 +73,65 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
-    &:first-child {
-            margin-bottom: 9px;
+    &:not(:last-child) {
+        margin-bottom: 9px;
     }
 
     &:focus,
     &:hover {
-            color: var(--accent-color);
+        color: var(--accent-color);
     }
 }
 
-.page-footer {
-    background-color: #2F303A;
-}
+.page-footer__join {
+    margin-bottom: 20px;
 
-.logotype__part-footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--main-light-color);
 }
 
-.subscribe-form {
+.join-social-list {
     display: flex;
-    align-items: flex-end;
-    gap: 12px;
+    justify-content: center;
 }
 
-.subscribe-form__label {
+.join-social-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-social-list__link {
+    transition: background-color var(--transition-duration) var(--transition-function);
+
+    color: var(--main-light-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
     display: flex;
-    flex-direction: column;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.join-social-list__icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
 }
 
 .subscribe-form__title {
+    display: block;
+    text-align: center;
     margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -127,7 +144,7 @@
 }
 
 .subscribe-form__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
     display: block;
@@ -145,13 +162,13 @@
     color: rgba(255, 255, 255, 0.6);
 
     &::placeholder {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
     }
 }
 
@@ -183,4 +200,92 @@
 .subscribe-button__icon {
     width: 24px;
     height: 24px;
+}
+
+@media screen and (min-width:768px){
+    .page-footer__container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .page-footer__join-wrapper{
+        text-align: center;
+    }
+
+    .page-footer__adress-wrapper {
+            justify-content: center;
+            text-align: center;
+    }
+    .subscribe-form__input{
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form{
+        margin-top: 60px;
+    }
+
+    .subscribe-button{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1200px){
+        .page-footer__container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+
+        .studio-adress {
+            margin-top: 0;
+            margin-bottom: 9px;
+    
+            font-family: var(--primary-font);
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--main-light-color);
+            font-style: normal;
+            
+        }
+        .logotype-footer-style{
+            text-align: left;
+            margin-bottom: 20px;
+            display: block;
+        }
+    
+        .subscribe-form {
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+            margin: 0;
+        }
+
+        .subscribe-form__input{
+            margin-bottom: 0;
+        }
+        .contact-list__item{
+            text-align: left;
+        }
+        .subscribe-form__label {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .subscribe-form__input {
+            width: 358px;
+            height: 50px;
+            padding-left: 16px;
+        }
+    
+        .subscribe-button {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+        }
 }

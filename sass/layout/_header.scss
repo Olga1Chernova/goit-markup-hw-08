@@ -22,7 +22,7 @@
 }
 
 
-.logotype {
+.logotype-header-style {
     display: block;
     padding: 16px 0;
 
@@ -45,7 +45,7 @@
     .mobile-menu-open{
         display: none;
     }
-    .logotype {
+    .logotype-header-style {
         padding: 26px 0;
     }
     .page-nav{
@@ -70,7 +70,7 @@
                 left: 0;
                 bottom: 0;
                 border-radius: 2px;
-                margin-bottom: -5px;
+                margin-bottom: -4px;
             }
         }
     
@@ -163,20 +163,23 @@
         display: flex;
         align-items: center;
     }
-        .logotype-header {
-            margin-right: 93px;
-        }
-        .contact-header-info {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        .mobile-menu-info__mail {
-            margin: 0;
-        }
-        .mobile-menu-info__tel{
-            margin-left: 30px;
-        }
-}
 
+    .logotype-header {
+        margin-right: 93px;
+    }
+
+    .contact-header-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu-info__mail {
+        margin: 0;
+    }
+
+    .mobile-menu-info__tel {
+        margin-left: 30px;
+    }
+}

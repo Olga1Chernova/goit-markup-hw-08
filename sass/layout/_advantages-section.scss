@@ -1,6 +1,7 @@
-@media screen and(max-width:480px){
+@media screen and(max-width:767px){
     .advantage {
-            padding-top: 85px;
+        padding-top: 60px;
+        padding-bottom: 60px
     }
     
     .advantages__icon-container {
@@ -30,18 +31,22 @@
         .advantage-icon__description {
             @include font(0.03em, 400, 14px);
     
-            width: 450px;
+            max-width: 450px;
             font-family: var(--primary-font);
             line-height: 1.71;
             color: var(--description-text-color);
-            margin-bottom: 30px;
             
-        }   
+        }
+        .advantage-icon__description:not(:last-child){
+            margin-bottom: 30px;
+        }
+
 }
 
 @media screen and (min-width:768px){
     .advantage {
-            padding-top: 85px;
+            padding-top: 60px;
+            padding-bottom: 60px;
     }
     
  .advantages {
@@ -61,6 +66,7 @@ margin-right: 30px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
 }
@@ -84,6 +90,7 @@ margin-right: 30px;
     line-height: 1.71;
     color: var(--description-text-color);
 }
+
 }
 
 @media screen and (min-width: 1200px){

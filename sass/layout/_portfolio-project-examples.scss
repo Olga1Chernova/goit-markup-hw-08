@@ -3,6 +3,10 @@
             min-height: 294px;
             width: 100%;
     }
+
+    .project-card:not(:last-child){
+        margin-bottom: 30px;
+    }
 }
 
 .project-image__overlay {
@@ -112,7 +116,7 @@
     .project-list {
             display: flex;
             flex-wrap: wrap;
-            gap:+ 30px;
+            gap: 30px;
     
             &:not(:nth-child(3n)) {
                 margin-right: 30px;
@@ -124,4 +128,8 @@
             width: 100%;
             display: block;
     }
+
+        .project-card__wrapper{
+            width:100%
+        }
 }

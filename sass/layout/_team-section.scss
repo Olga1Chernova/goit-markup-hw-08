@@ -90,6 +90,10 @@
         padding-top: 30px;
         padding-bottom: 24px;
     }
+
+    .team-card--tablet{
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and(min-width:1200px){
@@ -100,10 +104,13 @@
     }
 
     .team-card__member-img {
-        width: 270px;
+        width: 100%;
         min-height: 260px;
     }
 
+    .team-card{
+        min-width: 270px;
+    }
     .team {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -152,4 +159,8 @@
         letter-spacing: 0.03em;
         color: var(--description-text-color);
     }
+
+        .team-card--tablet {
+            margin-bottom: 0px;
+        }
 }

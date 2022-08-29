@@ -558,12 +558,12 @@ button {
   .mob-menu-social-list__item:not(:last-child) {
     margin-right: 10px;
   }
-  .mob-menu-social-list__item:not(:last-child)::after {
-    content: "";
+  .mob-menu-social-list__item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     border-right-color: rgba(33, 33, 33, 0.2);
     border-right-style: solid;
-    border-right-width: 1px;
+    margin-right: 10px;
+    padding-right: 10px;
   }
   .mob-menu-social-list__link {
     font-family: "Roboto";

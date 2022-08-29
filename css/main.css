@@ -151,7 +151,7 @@ button {
   transform: scale(0);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .modal-window {
     position: absolute;
     max-width: 450px;
@@ -202,6 +202,11 @@ button {
     padding: 40px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    max-width: 528px;
+  }
+}
 /*.modal-window {
     position: absolute;
     width: 528px;
@@ -215,7 +220,7 @@ button {
 
 
 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .modal-window-form__agreement-title {
     font-family: "Roboto";
     font-style: normal;
@@ -1102,6 +1107,9 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
   .work-image-overlay {
     position: relative;
   }
@@ -1229,6 +1237,9 @@ button {
   .team-card {
     min-width: 270px;
   }
+  .team-card:not(:last-child) {
+    margin-right: 30px;
+  }
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1239,7 +1250,7 @@ button {
     padding-bottom: 30px;
   }
   .team__title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -1356,8 +1367,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    padding-top: 0;
-    padding-bottom: 92px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .clients__title {
     font-family: "Roboto";
@@ -1437,7 +1448,6 @@ button {
 }
 @media screen and (max-width: 767px) {
   .project-image {
-    min-height: 294px;
     width: 100%;
   }
   .project-card:not(:last-child) {

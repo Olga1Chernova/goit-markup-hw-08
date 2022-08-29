@@ -111,6 +111,9 @@
     .team-card{
         min-width: 270px;
     }
+    .team-card:not(:last-child){
+    margin-right: 30px;
+    }
     .team {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -123,8 +126,7 @@
     }
 
     .team__title{
-        padding-bottom: 50px;
-        
+        margin-bottom: 50px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;

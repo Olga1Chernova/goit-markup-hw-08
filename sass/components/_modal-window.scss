@@ -1,4 +1,4 @@
-@media screen and(max-width:480px) {
+@media screen and(max-width:767px) {
 .modal-window {
         position: absolute;
         max-width: 450px;
@@ -54,6 +54,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 40px;
+    }
+}
+
+@media screen and(min-width:1200px) {
+    .modal-window{
+    max-width: 528px;
     }
 }
 /*.modal-window {

@@ -46,6 +46,7 @@
 
 .project-card {
     background-color: var(--main-light-color);
+    display: flex;
 }
 
 
@@ -85,6 +86,9 @@
 .project-card__shadow {
     transition: box-shadow var(--transition-duration) var(--transition-function);
 
+    display: flex;
+    flex-direction: column;
+    
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -107,6 +111,7 @@
 
     .project-card__wrapper{
     width: 354px;
+    flex-grow: 2;
     }
 
 }

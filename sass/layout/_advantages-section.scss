@@ -107,6 +107,7 @@ margin-right: 30px;
     
         .advantage {
             padding-top: 94px;
+            padding-bottom: 94px;
         }
     
         .advantages {
@@ -154,7 +155,7 @@ margin-right: 30px;
             }
         }
 
-        .advantages__item--tablet {
-                    margin-bottom: 0px;
+        .advantages .advantages__item--tablet {
+            margin-bottom: 0px;
         }
 }

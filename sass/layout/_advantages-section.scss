@@ -21,7 +21,6 @@
     .advantage-icon__title {
             @include font(0.03em, 700, 14px);
     
-            margin-bottom: 10px;
             width: 270px;
             font-family: 'Roboto';
             line-height: 1.14;
@@ -38,6 +37,7 @@
             font-family: var(--primary-font);
             line-height: 1.71;
             color: var(--description-text-color);
+            margin-top: 10px;
             
         }
         .advantage-icon__description:not(:last-child){
